@@ -8,14 +8,22 @@ package com.mycompany.polimorphisme_this;
  *
  * @author Sultan
  */
-public class Employe extends Person{
-        public Employe() {
-        super();
-        
-        System.out.println("Ekekusi konstruktor Employee()");
-    }
+public class Employe extends Person {
     
-    public void info(){
-        super.showMessage();
+    float salary = 4000f;
+    String name = "Ratu Kanjeng Dimas";
+    int age = 100;
+      
+    public void showInfosuper(){
+        System.out.println("============SUPER===========");
+        System.out.println("Name: " + super.name);
+        System.out.println("Age: " + super.age);
+        System.out.println("Salary: $" + salary);
+    }
+    public void showInfothis(){
+        System.out.println("============THIS===========");
+        System.out.println("Name: " + this.name);
+        System.out.println("Age: " + this.age);
+        System.out.println("Salary: $" + salary);
     }
 }
