@@ -9,12 +9,6 @@ package com.mycompany.polimorphisme_this;
  * @author Sultan
  */
 public class Person {
-
-    public Person() {
-        System.out.println("Eksekusi konstruktor Person()");
-    }
-    
-    public void showMessage(){
-        System.out.println("Hello, ini pesan dari class Person...");
-    }
+    String name = "Sultan Muhammad Adji Pratama";
+    int age = 15;
 }
