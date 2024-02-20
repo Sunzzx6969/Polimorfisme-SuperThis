@@ -10,10 +10,12 @@ package com.mycompany.polimorphisme_this;
  */
 public class Polimorphisme_this {
     public static void main(String[] args) {
-        Employe dian = new Employe();
+        Employe human = new Employe();
         
-        dian.info();
+        human.showInfothis();
+        human.showInfosuper();
     }
 }
+
 
 
